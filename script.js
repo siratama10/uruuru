@@ -189,8 +189,8 @@ question: "Chatgptで10~50回の質問のやり取りをする事に500mlペッ�
             answer: "100,000L",
             explanation: "チップを製造する工程で超純水と言われる水で洗浄する工程が数百回あり、それによって大量の水を消費します。"
         },
-              ];
-};
+              ],
+},
      
 
     let currentQuestionIndex = 0;
