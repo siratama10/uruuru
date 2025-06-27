@@ -1,5 +1,5 @@
 const quizData = {
-      easy: [
+       easy: [
       {
            question: "AIを使うために多くのエネルギーが必要になると、何が影響を受けるか？",
             choices: ["水の使う量が増える", "CO₂が減る", "水が綺麗になる", "エネルギー消費が減る"],
@@ -190,6 +190,8 @@ question: "Chatgptで10~50回の質問のやり取りをする事に500mlペッ�
             explanation: "チップを製造する工程で超純水と言われる水で洗浄する工程が数百回あり、それによって大量の水を消費します。"
         },
               ];
+};
+     
 
     let currentQuestionIndex = 0;
     let selectedQuiz = [];
