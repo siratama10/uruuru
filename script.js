@@ -214,14 +214,15 @@ question: "Chatgptで10~50回の質問のやり取りをする事に500mlペッ�
         return array;
     }
     
-    function startQuiz(genre) {
-        selectedQuiz = quizData[genre];
-        currentQuestionIndex = 0;
-        score = 0; // ✅ クイズ開始時にスコアをリセット
-        genreSelectionEl.style.display = "none";
-        quizContainerEl.style.display = "block";
-        loadQuestion();
-    }
+  function startQuiz(genre) {
+    const allQuestions = quizData[genre];
+    selectedQuiz = shuffleArray([...allQuestions]).slice(0, 5); // 🔸ランダムに5問抽出
+    currentQuestionIndex = 0;
+    score = 0;
+    genreSelectionEl.style.display = "none";
+    quizContainerEl.style.display = "block";
+    loadQuestion();
+}
     
     function loadQuestion() {
         const currentQuestion = selectedQuiz[currentQuestionIndex];
